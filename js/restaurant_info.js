@@ -15,9 +15,11 @@ window.initMap = () => {
         scrollwheel: false
       });
       fillBreadcrumb();
+	  registerServiceWorker();
       DBHelper.mapMarkerForRestaurant(self.restaurant, self.map);
     }
   });
+
 }
 
 /**
@@ -170,6 +172,8 @@ fillBreadcrumb = (restaurant=self.restaurant) => {
  * Get a parameter by name from page URL.
  */
 getParameterByName = (name, url) => {
+
+
   if (!url)
     url = window.location.href;
   name = name.replace(/[\[\]]/g, '\\$&');

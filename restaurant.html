@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +29,7 @@
   <!-- Beginning main -->
   <main id="maincontent">
     <!-- Beginning map -->
-    <section id="map-container">
+    <section id="map-container"  role="application" >
       <div id="map"></div>
     </section>
     <!-- End map -->
@@ -57,6 +57,8 @@
   <!-- End footer -->
 
   <!-- Beginning scripts -->
+    <!-- Register ServiceWorker -->
+    <script type="text/javascript" src="js/registerserviceworker.js"></script>
   <!-- Database helpers -->
   <script type="text/javascript" src="js/dbhelper.js"></script>
   <!-- Main javascript file -->

@@ -6,6 +6,9 @@ self.addEventListener('install',function(event){
 		caches.open('uda-test-v1').then(function(cache){
 			return cache.addAll([
 			'/',
+			'data/restaurants.json',
+			'restaurant.html',
+			'js/dbhelper.js',
 			'js/main.js',
 			'js/restaurant_info.js',
 			'css/styles.css',
@@ -69,7 +72,7 @@ self.addEventListener('fetch', function(event){
 	caches.match(event.request).then(function(response){
 		if(response) return response;
 		return fetch(event.request);
-	})
-	)
+	}
+	))
 	
 });
