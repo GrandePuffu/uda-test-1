@@ -6,6 +6,7 @@ self.addEventListener('install',function(event){
 		caches.open('uda-test-v1').then(function(cache){
 			return cache.addAll([
 			'/',
+			'index.html',
 			'data/restaurants.json',
 			'restaurant.html',
 			'js/dbhelper.js',

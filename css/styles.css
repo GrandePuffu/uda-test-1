@@ -330,7 +330,15 @@ nav h1 a {
 	top:131px;
 }
 
-#restaurant-container, #reviews-container{
+#restaurant-container{
+	display:block;
+	width:100%;
+	position:relative;
+	padding: 0px 5% 30px;
+	top:131px;
+}
+
+#reviews-container{
 	display:block;
 	width:90%;
 	position:relative;
